@@ -1,0 +1,12 @@
+workflow:
+  id: hello-world-earthling
+  name: 'Hello World to Earthling Responder'
+  description:
+    "Replies with 'Hello Earthling' whenever a user says 'Hello World'. Triggered by the phrase
+    'Hello World' in chat, email, or API."
+  steps:
+    - id: respond_hello_earthling
+      function: sendResponse
+      input:
+        type: fixed
+        message: 'Hello Earthling'
