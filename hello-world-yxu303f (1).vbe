@@ -1,0 +1,11 @@
+# This vibe replies back with Hello Citizen
+workflow:
+  id: hello-world-yxu303f
+  name: "Hello World"
+  description: "This vibe replies back with Hello Citizen whenever user says Hello world"
+  steps:
+    - id: respond
+      function: sendResponse
+      input: 
+        type: fixed
+        message: "Hello Citizen"
